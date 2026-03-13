@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import { Sparkles } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-function CoffeeIcon({ className }: { className?: string }) {
+function CoffeeIcon({ className, style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} style={style} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"
         fill="currentColor"
@@ -29,9 +29,9 @@ function CoffeeIcon({ className }: { className?: string }) {
   )
 }
 
-function ChocolateIcon({ className }: { className?: string }) {
+function ChocolateIcon({ className, style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} style={style} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="3" y="6" width="18" height="12" rx="2" fill="currentColor" />
       <line x1="9" y1="6" x2="9" y2="18" stroke="var(--background)" strokeWidth="1.5" />
       <line x1="15" y1="6" x2="15" y2="18" stroke="var(--background)" strokeWidth="1.5" />
@@ -56,6 +56,10 @@ export function LoveCalculator() {
       ["riya", "karan"],
       ["karan suthar", "riya sharma"],
       ["riya sharma", "karan suthar"],
+      ["riya sharma", "karan"],
+      ["karan", "riya sharma"],
+      ["karan suthar" , "riya"],
+      ["riya", "karan suthar"]
     ]
 
     return specialPairs.some(
