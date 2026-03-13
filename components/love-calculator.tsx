@@ -60,6 +60,8 @@ export function LoveCalculator() {
       ["karan", "riya sharma"],
       ["karan suthar" , "riya"],
       ["riya", "karan suthar"]
+      ["karan", "muskan"],
+      ["muskan", "karan"]
     ]
 
     return specialPairs.some(
