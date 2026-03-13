@@ -59,7 +59,7 @@ export function LoveCalculator() {
       ["riya sharma", "karan"],
       ["karan", "riya sharma"],
       ["karan suthar" , "riya"],
-      ["riya", "karan suthar"]
+      ["riya", "karan suthar"],
       ["karan", "muskan"],
       ["muskan", "karan"]
     ]
